@@ -3,8 +3,14 @@
     "name": "Popmart Cookie Extension",
     "version": "1.0",
     "description": "A Extension For Dump A Cookie in rockerPopmart",
-    "permissions": ["cookies"],
-    "host_permissions": ["https://popmartth.rocket-booking.app/*"],
+    "permissions": [
+    "cookies",
+    "tabs",
+    "<all_urls>"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
     "background": {
         "service_worker": "background.js"
     },
